@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #dcdcdc;">
+    <div style="max-width: 500px; margin: auto; background-color: white; padding: 20px; border-radius: 12px; box-shadow:4px 8px 16px rgba(0, 0, 0, 0.1);">
+        <h1 style="text-align: center; color: #333433;">Form Tambah data Kamar</h1>
+        <form method="get">
+            <label style="font-weight: bold; color: #333433;">Id Kamar:</label>
+            <input type="number" id="idKamar" name="idKamar" min="1" required
+            style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 15px; border: 2px solid; border-radius: 12px;">
+            <label style="font-weight: bold; color: #333433;">Gambar Kamar:</label>
+            <input type="file" id="kamar" name="kamar" accept="image/*" required
+            style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 15px; border: 2px solid; border-radius: 12px;">
+            <label style="font-weight: bold; color: #333433;">jenis Kamar</label>
+            <select id="tipekamar" name="tipekamar" required 
+            style="text-align: center; width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 15px; border: 2px solid;
+             font-weight: bold; color: #333433; border-radius: 12px;">
+                <option value="-" selected>--PILIH--</option>
+                <option value="st">Standard</option>
+                <option value="dl">Deluxe</option>
+                <option value="fm">Family</option>
+            </select>
+            <label style="font-weight: bold; color: #333433;">Harga</label>
+           <input type="number" id="harga" name="harga" min="100000" required placeholder=" harga min 100.000"
+            style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 10px; border: 2px solid; border-radius: 12px;">
+            <label style="font-weight: bold; color: #333433;">Fasilitas</label>
+            <select id="tipekamar" name="tipekamar" required 
+            style="text-align: center; width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 15px; border: 2px solid;
+             font-weight: bold; color: #333433; border-radius: 12px;">
+                <option value="-" selected>--PILIH--</option>
+                <option value="kr">Kolam Renang</option>
+                <option value="gym">Gym</option>
+                <option value="bl">Billiard</option>
+            </select>
+            <div style="text-align: center; margin-top: 15px;">
+                <button type="submit" class="save" style="padding: 10px 20px; margin: 5px; border: none; border-radius: 4px; background-color: #007bff; color: #fff; cursor: pointer;">SIMPAN</button>
+                <button type="reset" class="cancel" style="padding: 10px 20px; margin: 5px; border: none; border-radius: 4px; background-color: #ffc107; color: #000; cursor: pointer;">BATAL</button>
+            </div>
+        </form>
+    </div>
+    <br/> <br/>
+    <div style="background-color: white; padding: 20px; border-radius: 12px; box-shadow:4px 8px 16px rgba(0, 0, 0, 0.1); max-width: 500px; margin: auto;">
+        <h1 style="text-align: center; color: #333433;">Form Fasilitas</h1>
+        <form method="get">
+            <lable style="font-weight: bold; color: #333433;">Id:</lable>
+            <input type="number" id="id" name="id" min="1" required
+            style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 15px; border: 2px solid; border-radius: 12px;">
+            <label style="font-weight: bold; color: #333433;">Nama:</label>
+           <input type="text" id="name" name="name" required style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 15px;
+            border: 2px solid; border-radius: 12px;">
+             <label style="font-weight: bold; color: #333433;">Fasilitas:</label>
+             <select id="fasilitas" name="fasilitas" required 
+             style="text-align: center; width: 103%; padding: 6px; margin-top: 9px; margin-bottom: 15px; border: 2px solid;
+              font-weight: bold; color: #333433; border-radius: 12px;">
+                 <option value="-" selected>--PILIH--</option>
+                 <option value="kr">Kolam Renang</option>
+                 <option value="gym">Gym</option>
+                 <option value="bl">Billiard</option>
+             </select>
+            <label style="font-weight: bold; color: #333433;">Harga Weekend:</label>
+           <input type="number" id="price" name="price" min="145000" step="20000" required placeholder=" harga min 145.000"
+            style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 10px; border: 2px solid; border-radius: 12px;">
+            <label style="font-weight: bold; color: #333433;">Harga Weekday:</label>
+           <input type="number" id="price" name="price" min="100000" step="5000" required placeholder=" harga min 100.000"
+            style="width: 100%; padding: 6px; margin-top: 9px; margin-bottom: 10px; border: 2px solid; border-radius: 12px;">
+            <label style="font-weight: bold; color: #333433;">Kuota:</label>
+           <input type="number" id="kuota" name="kuota" min="1" required
+            style="width: 100%; padding: 8px; margin-top: 9px; margin-bottom: 10px; border: 2px solid; border-radius: 12px; ">
+           <label style="font-weight: bold; color: #333433;">Jam Buka:</label>
+           <input type="time" id="schedule" name="schedule" style="width: 100%;
+           border: 2px solid; border-radius: 12px; padding: 6px; margin-top: 8px; margin-bottom: 15px;">
+           <label style="font-weight: bold; color: #333433;">Jam Tutup:</label>
+           <input type="time" id="schedule" name="schedule" style="width: 100%;
+           border: 2px solid; border-radius: 12px; padding: 6px; margin-top: 8px; margin-bottom: 15px;">
+           <div style="text-align: center; margin-top: 15px;">
+            <button type="submit" class="save" style="padding: 10px 20px; margin: 5px; border: none; border-radius: 4px; background-color: #007bff; color: #fff; cursor: pointer;">SIMPAN</button>
+            <button type="reset" class="cancel" style="padding: 10px 20px; margin: 5px; border: none; border-radius: 4px; background-color: #ffc107; color: #000; cursor: pointer;">BATAL</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
